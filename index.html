@@ -16,17 +16,31 @@
 </head>
 <body ng-app="myApp" ng-controller="myCtrl">
     
+    <center> 
     <input ng-model = "subReddit">
-    {{subReddit}}
+    <button ng-click = "call()"> Submit</button>
+    </center>
     
-   <div  ng-repeat="value in myWelcome.data.data.children" class="container">
+   <div  ng-repeat="value in responseData.data.data.children" class="container">
+       
+      
+    <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+    
         
-       <a href = {{value.data.url}} target= "_blank"> 
-       {{value.data.title}}
-       </a>
-            
-    </div>
-   
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+         <td><a href = {{value.data.url}} target= "_blank"> {{value.data.title}} ({{value.data.ups}}) </a> </td>
+    
+      </tr>
+    </tbody>
+  </table>
+  </div>
+       </div>
    
     
     </body>

@@ -14,18 +14,18 @@
     
 
 
-    app.controller('myCtrl', function($scope, $http, $timeout) {
+    app.controller('myCtrl', function($scope, $http) {
         
         
-        
-        /*
-        * Request data for top 20 cryptocurrencies by total 
-        * marketcap from CoinMarketCap API
-        */
-        $http.get("https://www.reddit.com/r/" + $scope.subReddit + "/hot/.json?limit=20")
+        $scope.call = function() {
+            $http.get("https://www.reddit.com/r/" + $scope.subReddit + "/hot/.json?limit=20")
             .then(function(myArr) {
-            $scope.myWelcome = myArr;
+            console.log(myArr);
+            $scope.responseData = myArr;
         });
+        }
+       
+        
         
         
         

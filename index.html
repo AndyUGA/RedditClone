@@ -28,23 +28,16 @@
    <div  ng-repeat="value in responseData.data.data.children" class="container">
        
       
-    <div class="table-responsive">          
-  <table class="table">
-    <thead>
-      <tr>
+    <ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+      <a href = {{value.data.url}} target= "_blank"> {{value.data.title}}  </a> 
     
-        
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-         <td><a href = {{value.data.url}} target= "_blank"> {{value.data.title}} ({{value.data.ups}}) </a> </td>
-    
-      </tr>
-    </tbody>
-  </table>
-  </div>
+    <span class="badge badge-light badge-pill"> <a ng-href = "https://www.reddit.com{{value.data.permalink}}" target = "_blank"> {{value.data.ups}}   </a> </span>
+  </li>
+</ul>
        </div>
+    
+
    
     
     </body>

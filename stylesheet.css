@@ -1,3 +1,10 @@
+
+* {
+   font-family: "Helvetica-Light", Arial;
+}
+
+
+
 .responsive  {
     width: 100%;
     max-width: 400px;
@@ -6,4 +13,18 @@
 
 .symbol {
     color: white;
+}
+
+.thumbnails {
+    max-height: 70px;
+    max-width: 70px;
+    margin-right: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.bold {
+    color: red;
 }

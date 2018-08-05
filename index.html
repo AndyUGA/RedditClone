@@ -33,8 +33,8 @@
   <li class="list-group-item d-flex justify-content-between align-items-center">
       <img src = {{value.data.thumbnail}} class = "thumbnails">
       
-      <div class = "title">
-      <a href = {{value.data.url}} target= "_blank" ng-class = "value.data.is_self ? 'bold' : 'negative'">  {{value.data.title}}> </a> 
+      <div class = "title" ng-class = "value.data.is_self ? 'default' : 'bold'">
+      <a href = {{value.data.url}} target= "_blank" >  {{value.data.title}} </a> 
         </div>
           
     <span class="badge badge-light badge-pill"> <a ng-href = "https://www.reddit.com{{value.data.permalink}}" target = "_blank"> {{value.data.ups}}   </a> </span>

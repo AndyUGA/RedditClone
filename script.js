@@ -16,7 +16,8 @@
 
     app.controller('myCtrl', function($scope, $http) {
         
-        $scope.names = ["Hot", "Top", "New", "Rising"];
+        $scope.names = ["hot", "top", "new", "rising"];
+        $scope.userOption = "hot";
         $http.get("https://www.reddit.com/r/all/hot/.json?limit=20")
             .then(function(myArr) {
 
@@ -25,7 +26,7 @@
         })
         
         $scope.Hot = function() {
-            $http.get("https://www.reddit.com/r/" + $scope.subReddit + "/hot/.json?limit=20")
+            $http.get("https://www.reddit.com/r/" + $scope.subReddit + "/" + $scope.userOption + "/.json?limit=20")
             .then(function(myArr) {
             console.log(myArr);
             $scope.responseData = myArr;

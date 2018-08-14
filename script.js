@@ -15,7 +15,8 @@
 
 
     app.controller('myCtrl', function($scope, $http) {
-       
+        
+        $scope.names = ["Hot", "Top", "New", "Rising"];
         $http.get("https://www.reddit.com/r/all/hot/.json?limit=20")
             .then(function(myArr) {
 

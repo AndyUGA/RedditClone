@@ -28,32 +28,36 @@
 <body ng-app="myApp" ng-controller="myCtrl">
    
     <center> 
-         <a href = "index.html"> <img src="https://i.redditmedia.com/N9eEBil1z3cMO5RzB6kM251tLy3eA_lbSwUJnR9BQ_k.jpg?s=2989dd46f94f232cc1ce3b6379f888ac" class="responsive"> </a>
-    <input placeholder = "Search Reddit" ng-model = "subReddit">
+         <a href = "index.html"> 
+             <img src="https://i.redditmedia.com/N9eEBil1z3cMO5RzB6kM251tLy3eA_lbSwUJnR9BQ_k.jpg?s=2989dd46f94f232cc1ce3b6379f888ac" class="responsive"> 
+         </a>
+         <input placeholder = "Search Reddit" ng-model = "subReddit">
     
         <select ng-model="redditFilter" ng-options="x for x in names">
         </select>
         
         <button ng-click = "search()"> Search </button>
-    
-    <br>
+        <br>
     </center>
     
    <div  ng-repeat="value in responseData.data.data.children" class="container">
-       
-      
-    <ul class="list-group">
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-      <img src = {{value.data.thumbnail}} class = "thumbnails">
-      
-      <div class = "title" ng-class = "value.data.is_self ? 'default' : 'bold'">
-      <a href = {{value.data.url}} target= "_blank" >  {{value.data.title}} </a> 
-        </div>
-          
-    <span class="badge badge-light badge-pill"> <a ng-href = "https://www.reddit.com{{value.data.permalink}}" target = "_blank"> {{value.data.ups}}   </a> </span>
-  </li>
-</ul>
-       </div>
+       <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <img src = {{value.data.thumbnail}} class = "thumbnails">
+            
+            <div class = "title" ng-class = "value.data.is_self ? 'default' : 'bold'">
+                <a href = {{value.data.url}} target= "_blank" > 
+                    {{value.data.title}} 
+                </a> 
+            </div>
+            <span class="badge badge-light badge-pill">
+                <a ng-href = "https://www.reddit.com{{value.data.permalink}}" target = "_blank">
+                    {{value.data.ups}}   
+                </a> 
+            </span>
+        </li>
+       </ul>
+    </div>
     
 
    

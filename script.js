@@ -22,8 +22,6 @@
         //Gets data from all subreddit to display on home page
         $http.get("https://www.reddit.com/r/all/hot/.json?limit=20")
             .then(function(myArr) {
-
-            console.log(myArr);
             $scope.responseData = myArr;
         })
         

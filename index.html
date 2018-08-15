@@ -26,7 +26,6 @@
 </head>
     
 <body ng-app="myApp" ng-controller="myCtrl">
-   
     <center> 
          <a href = "index.html"><img src="https://i.redditmedia.com/N9eEBil1z3cMO5RzB6kM251tLy3eA_lbSwUJnR9BQ_k.jpg?s=2989dd46f94f232cc1ce3b6379f888ac" class="responsive"></a>
          <input placeholder = "Search Reddit" ng-model = "subReddit">
@@ -35,14 +34,14 @@
         </select>
         
         <button ng-click = "search()"> Search </button>
+        
         <br>
+        
     </center>
-    
    <div  ng-repeat="value in responseData.data.data.children" class="container">
        <ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">
             <img src = {{value.data.thumbnail}} class = "thumbnails">
-            
             <div class = "title" ng-class = "value.data.is_self ? 'default' : 'bold'">
                 <a href = {{value.data.url}} target= "_blank" > 
                     {{value.data.title}} 

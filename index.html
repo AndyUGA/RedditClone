@@ -29,7 +29,7 @@
     -->
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Reddit</a>
+  <a class="navbar-brand" href="index.html">Reddit</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -40,14 +40,11 @@
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-          
-        <a (click) = "search()" class="nav-link" href="#"> <img class = "navbarIMG" src = "https://cdn1.iconfinder.com/data/icons/wayfinding-system-basic-icon-set/512/parking-512.png"></a>
+        <a ng-click="searchAll()" class="nav-link"> <!--<img class = "navbarIMG" src = "https://userscontent2.emaze.com/images/5dd9d5d8-36e9-4b45-b4fa-a12f9adefb43/c443e807105607f81b720e8cc36113b2.png"> --> All</a>
       </li>
+        
         <li class="nav-item">
-        <a class="nav-link" href="#">All</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Original Content</a>
+        <a ng-click="searchOC()" class="nav-link"> <!-- <img class = "navbarIMG2" src = "http://eatlogos.com/alphabet_logos/png/vector_o_letter_brutal_logo.png"> --> Oringal Content</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

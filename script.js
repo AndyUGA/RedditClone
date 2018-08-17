@@ -34,6 +34,22 @@
         });
         }
         
+        $scope.searchAll = function() {
+            $http.get("https://www.reddit.com/r/all/" + $scope.redditFilter + "/.json?limit=20")
+            .then(function(myArr) {
+            console.log(myArr);
+            $scope.responseData = myArr;
+        });
+        }
+        
+        $scope.searchOC = function() {
+            $http.get("https://www.reddit.com/original/" + $scope.redditFilter + "/.json?limit=20")
+            .then(function(myArr) {
+            console.log(myArr);
+            $scope.responseData = myArr;
+        });
+        }
+        
         
         
         

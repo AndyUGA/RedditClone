@@ -50,6 +50,14 @@
         });
         }
         
+        $scope.searchApple = function() {
+            $http.get("https://www.reddit.com/r/apple/" + $scope.redditFilter + "/.json?limit=20")
+            .then(function(myArr) {
+            console.log(myArr);
+            $scope.responseData = myArr;
+        });
+        }
+        
         
         
         

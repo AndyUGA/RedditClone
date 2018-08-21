@@ -19,6 +19,7 @@ A reddit clone that allows you to search for your favorite subreddit
 - Utilize AngularJS ngRepeat to instantiate a template for each subreddit 
 - Utilize AngularJS ngClass component to bold titles of articles that lead to external site
 - Utilize Bootstrap Grid System to design responsive website
+- Utilize Bootstrap to implement responsive navigation bar
 ---------------------------------------------------------------------------------------------------------------------------
 ## Live Preview
 http://cobweb.cs.uga.edu/~truong/reddit/

@@ -31,6 +31,7 @@
             .then(function(myArr) {
 
             $scope.responseData = myArr;
+            $scope.subReddit = "";
         });
         }
         

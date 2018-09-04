@@ -2,106 +2,106 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title> Reddit </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script type = "text/javascript" src = "script.js"> </script>
+    <head>
+        <title> Reddit </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script type = "text/javascript" src = "script.js"> </script>
 
-    <script type = "text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+        <script type = "text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-  <!-- Angular Material Library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
 
-   
-</head>
+        <!-- Angular Material Library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+
+
+    </head>
     <!--
-    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWkK8mD7RX6kgjTb-PM_0ayCS81Iy1CXz8eYWqtLr4T0Nczid">
-    -->
-    
+<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWkK8mD7RX6kgjTb-PM_0ayCS81Iy1CXz8eYWqtLr4T0Nczid">
+-->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">Reddit</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+        <a class="navbar-brand" href="index.html">Reddit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      
-      <li class="nav-item">
-        <a ng-click="searchAll()" class="nav-link"> <!--<img class = "navbarIMG" src = "https://userscontent2.emaze.com/images/5dd9d5d8-36e9-4b45-b4fa-a12f9adefb43/c443e807105607f81b720e8cc36113b2.png"> --> All</a>
-      </li>
-        
-        <li class="nav-item">
-        <a ng-click="searchOC()" class="nav-link"> <!-- <img class = "navbarIMG2" src = "http://eatlogos.com/alphabet_logos/png/vector_o_letter_brutal_logo.png"> --> Oringal Content</a>
-      </li>
-        
-        <li class="nav-item">
-        <a ng-click="searchApple()" class="nav-link"> <!-- <img class = "navbarIMG2" src = "http://eatlogos.com/alphabet_logos/png/vector_o_letter_brutal_logo.png"> --> Apple </a>
-      </li>
-        
-        <li class="nav-item">
-        <a ng-click="searchUGA()" class="nav-link"> <!-- <img class = "navbarIMG2" src = "http://eatlogos.com/alphabet_logos/png/vector_o_letter_brutal_logo.png"> --> UGA </a>
-      </li>
-        
-        <li class="nav-item">
-        <a ng-click="searchAskReddit()" class="nav-link"> <!-- <img class = "navbarIMG2" src = "http://eatlogos.com/alphabet_logos/png/vector_o_letter_brutal_logo.png"> --> AskReddit </a>
-      </li>
-        
-        <!--
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-          
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a ng-click="searchAll()" class="nav-link"> <!--<img class = "navbarIMG" src = "https://userscontent2.emaze.com/images/5dd9d5d8-36e9-4b45-b4fa-a12f9adefb43/c443e807105607f81b720e8cc36113b2.png"> --> All</a>
+                </li>
+
+                <li class="nav-item">
+                    <a ng-click="searchOC()" class="nav-link"> <!-- <img class = "navbarIMG2" src = "http://eatlogos.com/alphabet_logos/png/vector_o_letter_brutal_logo.png"> --> Oringal Content</a>
+                </li>
+
+                <li class="nav-item">
+                    <a ng-click="searchApple()" class="nav-link"> <!-- <img class = "navbarIMG2" src = "http://eatlogos.com/alphabet_logos/png/vector_o_letter_brutal_logo.png"> --> Apple </a>
+                </li>
+
+                <li class="nav-item">
+                    <a ng-click="searchUGA()" class="nav-link"> <!-- <img class = "navbarIMG2" src = "http://eatlogos.com/alphabet_logos/png/vector_o_letter_brutal_logo.png"> --> UGA </a>
+                </li>
+
+                <li class="nav-item">
+                    <a ng-click="searchAskReddit()" class="nav-link"> <!-- <img class = "navbarIMG2" src = "http://eatlogos.com/alphabet_logos/png/vector_o_letter_brutal_logo.png"> --> AskReddit </a>
+                </li>
+
+                <!--
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Dropdown
+</a>
+
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="#">Action</a>
+<a class="dropdown-item" href="#">Another action</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">Something else here</a>
+</div>
+
+</li>
+-->
+            </ul>
+
         </div>
-       
-      </li>
-      -->
-    </ul>
-
-  </div>
-</nav>
-<body ng-app="myApp" ng-controller="myCtrl">
-    <center> 
-        <a href = "index.html"><img src="https://i.redditmedia.com/N9eEBil1z3cMO5RzB6kM251tLy3eA_lbSwUJnR9BQ_k.jpg?s=2989dd46f94f232cc1ce3b6379f888ac" class="responsive"></a>
-        <input placeholder = "Search Reddit" ng-model = "subReddit">
-        <select ng-model="redditFilter" ng-options="x for x in names">
-        </select>
-        <button ng-click = "search()"> Search </button>
-        <br><br>
-    </center>
-   <div  ng-repeat="value in responseData.data.data.children" class="container">
-       <ul class="list-group">
-           <li class="list-group-item d-flex justify-content-between align-items-center">
-               <img src = {{value.data.thumbnail}} class = "thumbnails">
-               <div class = "title" ng-class = "value.data.is_self ? 'default' : 'bold'">
-                   <a href = {{value.data.url}} target= "_blank" > 
-                       {{value.data.title}} 
-                   </a> 
-               </div>
-               <span class="badge badge-light badge-pill">
-                   <a ng-href = "https://www.reddit.com{{value.data.permalink}}" target = "_blank">
-                       {{value.data.ups}}   
-                   </a> 
-               </span>
-           </li>
-       </ul>
-    </div>
+    </nav>
+    <body ng-app="myApp" ng-controller="myCtrl">
+        <center> 
+            <a href = "index.html"><img src="https://i.redditmedia.com/N9eEBil1z3cMO5RzB6kM251tLy3eA_lbSwUJnR9BQ_k.jpg?s=2989dd46f94f232cc1ce3b6379f888ac" class="responsive"></a>
+            <input placeholder = "Search Reddit" ng-model = "subReddit">
+            <select ng-model="redditFilter" ng-options="x for x in names">
+            </select>
+            <button ng-click = "search()"> Search </button>
+            <br><br>
+        </center>
+        <div  ng-repeat="value in responseData.data.data.children" class="container">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <img src = {{value.data.thumbnail}} class = "thumbnails">
+                    <div class = "title" ng-class = "value.data.is_self ? 'default' : 'bold'">
+                        <a href = {{value.data.url}} target= "_blank" > 
+                            {{value.data.title}} 
+                        </a> 
+                    </div>
+                    <span class="badge badge-light badge-pill">
+                        <a ng-href = "https://www.reddit.com{{value.data.permalink}}" target = "_blank">
+                            {{value.data.ups}}   
+                        </a> 
+                    </span>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>
 

@@ -69,7 +69,13 @@
         });
         }
         
-        
+        $scope.searchAskReddit = function() {
+            $http.get("https://www.reddit.com/r/AskReddit/" + $scope.redditFilter + "/.json?limit=20")
+            .then(function(myArr) {
+
+            $scope.responseData = myArr;
+        });
+        }
         
         
         

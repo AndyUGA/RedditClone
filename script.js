@@ -43,7 +43,7 @@
             .then(function(myArr) {
                 
             $scope.responseData = myArr;
-            console.log(name);
+
         });
         }
         

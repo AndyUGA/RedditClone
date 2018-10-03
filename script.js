@@ -25,7 +25,7 @@
         })
         
         //Gets data from user specified subreddit and filter 
-        $scope.search = function() {
+        $scope.searchUserInput = function() {
             $http.get("https://www.reddit.com/r/" + $scope.subReddit + "/" + $scope.redditFilter + "/.json?limit=20")
             .then(function(myArr) {
                 

@@ -82,7 +82,7 @@ Dropdown
             <input placeholder = "Enter Subreddit" ng-model = "subReddit">
             <select ng-model="redditFilter" ng-options="x for x in names">
             </select>
-            <button ng-click = "search()"> Search </button>
+            <button ng-click = "searchUserInput()"> Search </button>
             <br><br>
         </center>
         <div  ng-repeat="value in responseData.data.data.children" class="container">

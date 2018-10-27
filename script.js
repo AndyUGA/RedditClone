@@ -10,6 +10,18 @@
     var app = angular.module('myApp', ['ngMaterial', 'ngMessages']);
    
     
+
+    function myFunction() {
+    // Get the snackbar DIV
+    var toastNotification = document.getElementById("snackbar");
+
+    // Add the "show" class to DIV
+    toastNotification.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ toastNotification.className = toastNotification.className.replace("show", ""); }, 3000);
+}
+
     app.controller('myCtrl', function($scope, $http) {
         
         //Filter options 
@@ -33,7 +45,10 @@
                 
             //Reset search filter query 
             $scope.subReddit = "";
-        });
+        }, function(err) {
+                this.myFunction();
+                
+            });
         }
         
 

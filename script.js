@@ -37,7 +37,6 @@
         }
         
 
-        
         $scope.search = function(name) {
             $http.get("https://www.reddit.com/r/" + name + "/" + $scope.redditFilter + "/.json?limit=20")
             .then(function(myArr) {
@@ -48,15 +47,7 @@
         }
         
         
-        
 
-        
-        
-        
-        
-        
-    
-        
         
     });
    

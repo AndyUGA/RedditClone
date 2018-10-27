@@ -47,6 +47,7 @@
             $scope.subReddit = "";
         }, function(err) {
                 this.myFunction();
+                $scope.subReddit = "";
                 
             });
         }

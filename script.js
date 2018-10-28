@@ -12,6 +12,7 @@
     
 
     function myFunction() {
+        
     // Get the snackbar DIV
     var toastNotification = document.getElementById("snackbar");
 
@@ -38,6 +39,9 @@
         
         //Gets data from user specified subreddit and filter 
         $scope.searchUserInput = function() {
+            var test = "https://www.reddit.com/r/" + $scope.subReddit + "/" + $scope.redditFilter + "/.json?limit=20";
+            
+            console.log(test);
             $http.get("https://www.reddit.com/r/" + $scope.subReddit + "/" + $scope.redditFilter + "/.json?limit=20")
             .then(function(myArr) {
                 

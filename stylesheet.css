@@ -60,7 +60,7 @@ a:hover {
     color: red;
 }
 
-.webTitle:hover {
+.webTitle:hover, .nav-link:hover {
     background-color: red;
 }
 .display {

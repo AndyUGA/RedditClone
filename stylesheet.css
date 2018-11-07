@@ -54,7 +54,14 @@
 }
 
 a {
+    color: black;
+}
+a:hover {
     color: red;
+}
+
+.webTitle:hover {
+    background-color: red;
 }
 .display {
     color: pink;

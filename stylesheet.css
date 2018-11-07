@@ -48,11 +48,14 @@
 
 
 
-* {
+*   {
    font-family: "Helvetica-Light", Arial;
 
 }
 
+a {
+    color: red;
+}
 .display {
     color: pink;
 }

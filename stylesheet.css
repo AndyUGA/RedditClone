@@ -55,9 +55,11 @@
 
 a {
     color: black;
+    
 }
-a:hover {
+a:hover, button:hover {
     color: red;
+    opacity: 1;
 }
 
 .webTitle:hover, .nav-link:hover {

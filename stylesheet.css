@@ -45,11 +45,16 @@
     to {bottom: 0; opacity: 0;}
 }
 
+.currentNum {
+    color: blue;
+}
 
 
-
-*   {
+*, .list-group-item  {
    font-family: "Helvetica-Light", Arial;
+    /*
+    background-color: #F0F0F0;
+    */
 
 }
 

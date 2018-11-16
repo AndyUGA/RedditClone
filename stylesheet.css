@@ -49,6 +49,10 @@
     color: blue;
 }
 
+.filter {
+    border-color: red;
+    
+}
 
 *, .list-group-item  {
    font-family: "Helvetica-Light", Arial;

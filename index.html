@@ -66,10 +66,10 @@
 
             <a  href = "index.html"><img class="responsive" src="https://cdn.dribbble.com/users/1761084/screenshots/3587716/reddit.gif" ></a>
 
-            <input placeholder = "/r" ng-model = "subReddit">
-            <select ng-model="redditFilter" ng-options="x for x in names">
+            <input class = "filter" placeholder = "/r" ng-model = "subReddit">
+            <select class = "filter" ng-model="redditFilter" ng-options="x for x in names">
             </select>
-            <button ng-click = "searchUserInput()"> Search </button>
+            <button class = "btn btn-outline-danger" ng-click = "searchUserInput()"> Search </button>
             <br><br>
         </center>
         <div ng-repeat="value in responseData.data.data.children" class=" display">

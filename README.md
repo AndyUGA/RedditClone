@@ -22,4 +22,4 @@ A reddit clone that allows you to search for your favorite subreddit
 - Utilize Bootstrap to implement responsive navigation bar
 ---------------------------------------------------------------------------------------------------------------------------
 ## Live Preview
-http://cobweb.cs.uga.edu/~truong/reddit/
+https://jolly-meninsky-2c4108.netlify.com/

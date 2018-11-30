@@ -94,7 +94,7 @@ a:hover, button:hover {
     opacity: 1;
 }
 
-.webTitle:hover, .nav-link:hover {
+.webTitle:hover {
     background-color: red;
 }
 .display {

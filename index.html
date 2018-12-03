@@ -83,9 +83,13 @@
             <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <img src = {{value.data.thumbnail}} class = "thumbnails">
+                    
                     <div class = "title" ng-class = "value.data.is_self ? 'default' : 'bold'">
                         <a href = {{value.data.url}} target= "_blank" > 
                             {{value.data.title}} 
+                            <div class = "subredditTitle"> 
+                                r/{{value.data.subreddit}}
+                            </div>
                         </a> 
                     </div>
                     <span class="badge badge-light badge-pill">

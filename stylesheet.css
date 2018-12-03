@@ -77,12 +77,11 @@
 
 *, .list-group-item  {
    font-family: "Helvetica-Light", Arial;
-    
-   
-    
-
 }
 
+.subredditTitle {
+    font-size: 12px;
+}
 
 
 a {

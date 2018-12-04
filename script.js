@@ -54,7 +54,7 @@ function myFunction2() {
         $scope.searchUserInput = function() {
             var test = "https://www.reddit.com/r/" + $scope.subReddit + "/" + $scope.redditFilter + "/.json?limit=20";
             
-            console.log(test);
+
             $http.get("https://www.reddit.com/r/" + $scope.subReddit + "/" + $scope.redditFilter + "/.json?limit=20")
             .then(function(myArr) {
             
@@ -73,7 +73,7 @@ function myFunction2() {
         $scope.search = function(name) {
             $http.get("https://www.reddit.com/r/" + name + "/" + $scope.redditFilter + "/.json?limit=20")
             .then(function(myArr) {
-            console.log('jdkfd');
+
             this.myFunction2();
             $scope.responseData = myArr;
             console.log(myArr);

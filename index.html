@@ -8,7 +8,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
         <script type = "text/javascript" src = "script.js"> </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script type = "text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
@@ -68,12 +71,13 @@
         <center> 
 
             <a  href = "index.html"><img class="responsive" src="https://cdn.dribbble.com/users/1761084/screenshots/3587716/reddit.gif" ></a>
-
+            <div class = "textbox"> 
             <input class = "filter" placeholder = "/r" ng-model = "subReddit">
+                </div>
             <select class = "filter" ng-model="redditFilter" ng-options="x for x in names">
             </select>
             <button class = "btn btn-outline-danger" ng-click = "searchUserInput()"> Search </button>
-            <br>
+            <br><br>
         </center>
         <div ng-repeat="value in responseData.data.data.children" class=" display">
             

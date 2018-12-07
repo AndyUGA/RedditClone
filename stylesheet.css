@@ -83,7 +83,9 @@
     font-size: 12px;
 }
 
-
+.textbox {
+    width: 50%;
+}
 a {
     color: black;
     

@@ -76,6 +76,7 @@
 .cSize {
     align-content: center;
     width: 30%;
+    text-align: center;
 }
 
 .card {

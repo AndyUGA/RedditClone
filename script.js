@@ -54,12 +54,12 @@ function myFunction2() {
         $scope.searchUserInput = function() {
             var test = "https://www.reddit.com/r/" + $scope.subReddit + "/" + $scope.redditFilter + "/.json?limit=20";
             
-
+            
             $http.get("https://www.reddit.com/r/" + $scope.subReddit + "/" + $scope.redditFilter + "/.json?limit=20")
             .then(function(myArr) {
             
             $scope.responseData = myArr;
-                
+            this.myFunction2();
             //Reset search filter query 
             $scope.subReddit = "";
         }, function(err) {

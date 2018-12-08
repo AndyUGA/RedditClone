@@ -123,9 +123,8 @@ a:hover, button:hover {
 }
 
 .thumbnails {
-    max-height: 70px;
-    max-width: 70px;
-    margin-right: 10px;
+
+    align-content: center;
 }
 
 .title {

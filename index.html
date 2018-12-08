@@ -83,9 +83,14 @@
         <div ng-repeat="value in responseData.data.data.children" class=" display">
             <div class="card cSize" >
                 <div class="card-body">
+                    
                     <a href = {{value.data.url}} target= "_blank" > 
-                        <h5 class="card-title">{{value.data.title}} </h5>
+                        <h5 class="card-title">{{value.data.title}}
+                        </h5>
+                        
                     </a>
+                     <div>  <img src = {{value.data.thumbnail}} class = "thumbnails"></div>
+                    <br>
                     <h6 class="card-subtitle mb-2 text-muted">
                         r/{{value.data.subreddit}}
                     </h6>
@@ -95,8 +100,11 @@
                     <a href="https://www.reddit.com{{value.data.permalink}}"  class="card-link"> 
                         {{value.data.num_comments}} comments
                     </a>
+                   
                 </div>
+               
             </div>
+            
             <!--
             <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center">

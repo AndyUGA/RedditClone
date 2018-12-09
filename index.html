@@ -89,7 +89,7 @@
                         </h5>
                         
                     </a>
-                     <div>  <img src = {{value.data.thumbnail}} class = "thumbnails"></div>
+                     <div class = "previewImage">  <img src = {{value.data.thumbnail}} class = "thumbnails"></div>
                     <br>
                     <h6 class="card-subtitle mb-2 text-muted">
                         r/{{value.data.subreddit}}
@@ -100,38 +100,8 @@
                     <a href="https://www.reddit.com{{value.data.permalink}}"  class="card-link"> 
                         {{value.data.num_comments}} comments
                     </a>
-                   
                 </div>
-               
             </div>
-            
-            <!--
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <img src = {{value.data.thumbnail}} class = "thumbnails">
-                    
-                    <div class = "title" ng-class = "value.data.is_self ? 'default' : 'bold'">
-                        <a href = {{value.data.url}} target= "_blank" > 
-                            {{value.data.title}} 
-                            <div class = "subredditTitle"> 
-                                <a href="https://www.reddit.com/r/{{value.data.subreddit}}"> r/{{value.data.subreddit}}</a>
-                                -
-                            <a href="https://www.reddit.com/user/{{value.data.author}}">  u/{{value.data.author}}   </a>-
-                                {{value.data.num_comments}} comments
-
-                            </div>
-                        </a> 
-                    </div>
-                    <span class="badge badge-light badge-pill">
-                        <a ng-href = "https://www.reddit.com{{value.data.permalink}}" target = "_blank">
-                            {{value.data.ups}}
-                        </a> 
-                    </span>
-                </li>
-            </ul>
-            -->
-            
-            
         </div>
     </body>
 </html>

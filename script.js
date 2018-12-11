@@ -23,8 +23,8 @@
     setTimeout(function(){ toastNotification.className = toastNotification.className.replace("show", ""); }, 3000);
 }
 
-function myFunction2() {
-    console.log('myFunction2 is being called');
+function displayToast() {
+    console.log('displayToast is being called');
     // Get the snackbar DIV
     var toastNotification2 = document.getElementById("snackbar2");
 
@@ -59,7 +59,7 @@ function myFunction2() {
             .then(function(myArr) {
             
             $scope.responseData = myArr;
-            this.myFunction2();
+            this.displayToast();
             //Reset search filter query 
             $scope.subReddit = "";
         }, function(err) {
@@ -74,7 +74,7 @@ function myFunction2() {
             $http.get("https://www.reddit.com/r/" + name + "/" + $scope.redditFilter + "/.json?limit=20")
             .then(function(myArr) {
 
-            this.myFunction2();
+            this.displayToast();
             $scope.responseData = myArr;
             console.log(myArr);
 

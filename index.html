@@ -48,7 +48,7 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item">
-                    <a ng-click="search('all')" class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">  All</a>
+                    <a ng-click="search('cscareerquestions')" class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">  CSCareerQuestions </a>
                 </li>
 
 
@@ -66,8 +66,10 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a ng-click="search('Technology')" class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"> Technology </a>
+                    <a ng-click="search('Technology')" class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"> Teadfchnology </a>
                 </li>
+                
+               
        </ul>
 
         </div>
@@ -91,8 +93,7 @@
                     
                     <a href = {{value.data.url}} target= "_blank" > 
                         <h5 class="card-title">{{value.data.title}}
-                        </h5>
-                        
+                        </h5>  
                     </a>
                      <div class = "previewImage">  <img src = {{value.data.thumbnail}} class = "thumbnails"></div>
                     <br>

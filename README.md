@@ -11,6 +11,7 @@ A reddit clone that allows you to search for your favorite subreddit
 - [Bootstrap](https://getbootstrap.com) 
 - [AngularJS](https://angularjs.org/)
 - [Reddit API](https://www.reddit.com/dev/api/) 
+- [Material Design](https://material.io/design/)
 
 ---------------------------------------------------------------------------------------------------------------------------
 

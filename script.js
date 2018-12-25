@@ -21,7 +21,6 @@
 }
 
     function displayToast() {
-    console.log('displayToast is being called');
 
         // Get the snackbar DIV
         var toastNotification2 = document.getElementById("snackbar2");
@@ -69,26 +68,19 @@
                 this.displayToastError();
                 
                 //Reset subreddit searchbox
-                $scope.subReddit = "";
-                
+                $scope.subReddit = "";        
             });
         }
         
-
         $scope.search = function(name) {
             $http.get("https://www.reddit.com/r/" + name + "/" + $scope.redditFilter + "/.json?limit=20")
             .then(function(myArr) {
-
             this.displayToast();
             $scope.responseData = myArr;
             console.log(myArr);
-
         });
         }
-        
-        
-
-        
+           
     });
    
        

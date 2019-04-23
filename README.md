@@ -4,6 +4,11 @@
 A reddit clone that allows you to search for your favorite subreddit 
 ------------------------------------------------------------------------------------------------------------------------------  
 
+<p align = "middle"> Homepage </p>
+
+![alt-text-1](https://github.com/AndyUGA/RedditClone/blob/master/Images/Home.png)
+
+
 ## Technologies utitilized in this project:
 - HTML
 - CSS
